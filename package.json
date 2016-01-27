@@ -1,0 +1,19 @@
+{
+  "name": "timestamp-ms",
+  "version": "1.0.0",
+  "description": "Timestamp Microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "5.5.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "moment": "^2.11.1"
+  }
+}

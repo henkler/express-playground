@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Timestamp microservice</title>
+  <meta name="description" content="Timestamp microservice">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="header">Timestamp microservice</h1>
+    </div>
+
+    <blockquote>
+      <h2>Requirements</h2>
+      <ul>
+        <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).</li>
+        <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+      </ul>
+    </blockquote>
+    <h3>Usage:</h3>
+    <code>http://appurl/January%203,%202017</code><br>
+    <code>http://appurl/1</code>
+    <code></code>
+    <h3>Output</h3>
+    <code>{ "unix": "1", "natural": "December 31, 1969" }</code>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
