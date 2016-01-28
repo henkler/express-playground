@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var bodyParser = require('body-parser');
 
 const APP_PORT = process.env.PORT || 8080;
 const PUBLIC_DIR = path.join(__dirname + '/public');
