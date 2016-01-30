@@ -34,6 +34,10 @@ app.get('/api/imagesearch/:searchTerm', function(req, res){
   imageSearch(req.params.searchTerm, offset, req, res);
 });
 
+app.get('*', function(req,res) {
+  res.status(404).send('Invalid search URL');
+});
+
 function imageSearch(searchTerm, offset, req, res) {
   saveSearchHistory(searchTerm);
   var searchURL = GIPHY_API_ENDPOINT_SEARCH + '?';
