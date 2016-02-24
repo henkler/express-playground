@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>File Metadata Microservice</title>
+  <meta name="description" content="File Metadata Microservice">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="header">File Metadata Microservice</h1>
+    </div>
+
+    <blockquote>
+      <h2>Requirements</h2>
+      <ul>
+        <li>I can submit a FormData object that includes a file upload.</li>
+        <li>When I submit something, I will receive the file size in bytes in the JSON response</li>
+      </ul>
+    </blockquote>
+    <div class="panel panel-success">
+      <div class="panel-heading"><h2>File Uploader</h2></div>
+      <div class="panel-body">
+        <form id="uploadForm" enctype="multipart/form-data">
+          <input type="file" id="file" /><br/>
+          <button type="submit" class="btn btn-success btn-lg">Upload File</button>
+        </form>
+      </div>
+      <div class="panel-footer">
+        <h2>File Size: <span id="fileSize"></span></h2>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
